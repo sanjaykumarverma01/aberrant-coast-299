@@ -1,0 +1,81 @@
+.dairy{
+    width: 1200px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top:30px;
+    display: flex;
+   gap: 70px;
+}
+.firstbox{
+    text-align: center;
+    display: grid;
+    border-bottom: 1px solid rgb(124, 122, 122);
+    /* border: 1px solid rgb(136, 41, 41); */
+}
+
+.secondBox{
+    /* text-align: center; */
+    /* border: 1px solid rgb(39, 30, 30); */
+    width: 100%;
+}
+.contain{
+    display: flex;
+    gap: 50px;
+    height: 60px;
+    /* border: 1px solid rgb(18, 214, 61); */
+    width: 100%;
+}
+
+.symbol{
+    gap: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.date{
+    color: rgb(219, 91, 16);
+}
+.logof{
+    color: red;
+    padding-right: 10px;
+    text-align: center;
+    font-size: large;
+
+}
+.logoL{
+    color: rgb(245, 205, 28);
+    padding-right: 10px;
+    text-align: center;
+    font-size: large;
+}
+.logoB{
+    color: rgb(25, 0, 255);
+    font-size: large;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.threedots{
+    padding-top: 25px;
+    padding-left: 140px;
+    font-size: large;
+}
+.tablemain{
+    /* border: 1px solid rgb(165, 33, 16); */
+}
+.tableinside{
+    display: flex;
+    border-bottom: 1px solid rgb(124, 122, 122);
+}
+.tableA{
+    padding-left: 270px;
+}
+.tableU{
+    padding-left: 20px;
+}
+.tableshow{
+    display: flex;
+    font-size: 12px;
+}
+.tableAa{
+    padding-left: 350px;
+}

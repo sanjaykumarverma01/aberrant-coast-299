@@ -1,0 +1,8 @@
+.app {
+    display: flex;
+    /* justify-content: center; */
+}
+.container {
+    /* width: 1200px; */
+    border:1px solid red
+}
