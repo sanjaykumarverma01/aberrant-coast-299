@@ -5,18 +5,19 @@ import Signin from '../Components/signin';
 
 const AllRoutes = () => {
   return (
-    
-    <Routes>
+    <div>
+      <Routes>
 
-      <Route path="/login" element={<Login/>}>
+        <Route path="/login" element={<Login/>}>
 
-      </Route>
-      
-      <Route path="/signin" element={<Signin/>}>
+        </Route>
+        
+        <Route path="/signin" element={<Signin/>}>
+          
+        </Route>
 
-      </Route>
-
-    </Routes>
+      </Routes>
+    </div>
   )
 }
 
