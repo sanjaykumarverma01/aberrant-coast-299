@@ -30,11 +30,11 @@ const Login = () => {
           <Inputs type='password' placeholder='password ' defaultValue={""} />
 
 
-          <Button w={"100%"} h={"50px"} fontSize="20px" mt={"15px"} color="black" fontWeight={"bold"} >Create Account</Button>
+          <Button w={"100%"} h={"50px"} fontSize="20px" mt={"15px"} color="black" fontWeight={"bold"} >Login</Button>
 
           <Box display={"flex"} fontSize="20px" justifyContent={"space-between"} mt="50px">
             <Box>Not a member? <Text as="span" color="red">Sign Up Now</Text></Box>
-            <Box>Forgot password?</Box>
+            <Box> <Text as="span" color="red">Forgot password?</Text></Box>
           </Box>
 
         </Box>
