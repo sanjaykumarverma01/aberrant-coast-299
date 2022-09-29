@@ -1,0 +1,25 @@
+.str{
+    width: 1200px;
+    /* border:1px solid red; */
+     margin: auto;
+
+}
+.border{
+    /* border:1px solid red; */
+    width:70%;
+    text-align: center;
+    margin: auto;
+    margin-right: 5px;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 30px;
+}
+.Heading{
+    text-align: center;
+    border-bottom: 1px solid grey;
+
+}
+.values{
+    display: flex;
+    flex-direction: column;
+}

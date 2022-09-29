@@ -1,18 +1,23 @@
 .navbar{
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid rgb(203, 201, 201); */
+    border-bottom: 1px solid rgb(203, 201, 201);
    gap: 20%;
 
 }
 .logo{
-    border: 1px solid rgb(32, 18, 18);
+    /* border: 1px solid rgb(32, 18, 18); */
     padding-left: 10px;
     width: 12%;
 }
 .links{
-    border: 1px solid rgb(32, 18, 18);
+    /* border: 1px solid rgb(32, 18, 18); */
     display: flex;
     gap: 60px;
+    padding-top: 10px;
+    font-size: medium;
+    font-weight: 700;
+    margin-left: 65px;
 }
 .link{
     text-decoration: none;

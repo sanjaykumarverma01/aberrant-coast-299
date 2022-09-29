@@ -3,15 +3,16 @@
     width: auto;
 } */
 .footer{
+    margin-top: 20px;
     display: flex;
-    gap: 25px;
+    gap: 20px;
     /* border: 1px solid red; */
     justify-content: center;
-    color: gray;
+    color: rgb(83, 80, 80);
 }
 .Dot{
     color: rgb(240, 117, 17);
-    padding-top: 14px;
+   margin-top: -4px;
     font-size: 40px;
 }
 .bottomFotter{
@@ -21,30 +22,27 @@
 
 }
 .logos{
-    padding-top: 7px;
+    margin:auto;
+    margin-top: 9px;
     font-size: large;
     color: aliceblue;
 }
 .logos:hover{
-    padding-top: 7px;
-    font-size: large;
     color: rgb(245, 100, 16);
     cursor: pointer;
 }
 .socialicon{
     border : 1px solid white;
-    width :30px;
-    height: 30px;
+    width :40px;
+    height: 40px;
     border-radius: 25px;
     margin-right: 10px;
 }
 .socialicon:hover{
-    /* border : 1px solid rgb(245, 100, 16); */
-    width :30px;
-    height: 30px;
     border-radius: 25px;
     margin-right: 10px;
     color: rgb(245, 100, 16);
+    border : 1px solid rgb(245, 100, 16);
     cursor: pointer;
 }
 .bottomFotter{
