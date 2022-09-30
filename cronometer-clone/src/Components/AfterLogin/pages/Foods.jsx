@@ -2,14 +2,19 @@ import React from 'react'
 import InsideNavbar from '../../InsideNavbar';
 import InsideFooter from '../../InsideFooter';
 import styles from '../css/food.module.css'
+
 import { Text,Box , Flex, Stack, Button, Input,Image} from '@chakra-ui/react'
 import { LockIcon,ArrowUpDownIcon,WarningIcon,ArrowBackIcon } from '@chakra-ui/icons'
 import foodpic from "../images/foodpic.png"
+
+
+
 
 const Foods = () => {
   return (
     <div>
       <InsideNavbar/>
+
       <div >
       <Box  pl="200px" pr="200px" mt="10px">
       <Box textAlign='left'>
@@ -87,7 +92,8 @@ const Foods = () => {
       </Flex>
 
       </Box>
-      </div>
+
+    
       <InsideFooter/>
     </div>
   )
