@@ -8,6 +8,7 @@ import Foods from "../Components/AfterLogin/pages/Foods"
 import Plans from "../Components/AfterLogin/pages/Plans"
 import Settings from "../Components/AfterLogin/pages/Settings";
 import Trends from "../Components/AfterLogin/pages/Trends"
+import Support from '../Components/AfterLogin/pages/Support';
 const AllRoutes = () => {
   return (
     <div>
@@ -21,6 +22,7 @@ const AllRoutes = () => {
         <Route path="/setting" element={<Settings/>}/>
         <Route path="/plans" element={<Plans/>}/>
         <Route path="/Helps" element={<Helps/>}/>
+        <Route path='/support' element={<Support/> }/>
 
       </Routes>
     </div>
