@@ -1,5 +1,16 @@
-import { legacy_createStore } from "redux";
+import { legacy_createStore,applyMiddleware,combineReducers,compose } from "redux";
 
-const store = legacy_createStore();
+import { authReducer } from "./AuthReducer/reducer";
+import thunk from "redux-thunk"
 
-export { store };
+const mainreducer =combineReducers({
+    authReducer
+})
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+export const store = legacy_createStore(
+    mainreducer,
+    composeEnhancers(applyMiddleware(thunk))
+);
+
+
