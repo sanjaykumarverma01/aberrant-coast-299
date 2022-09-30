@@ -1,5 +1,105 @@
 .helps{
     width: 1200px;
-    border: 5px solid red;
+    /* border: 1px solid red; */
     margin: auto;
 }
+.heading{
+   text-align: center;
+}
+.heading>h1{
+    margin-top: 10px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.heading>p{
+    margin-top: 10px;
+}
+.GridBox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 60px;
+    /* border: 1px solid black;/ */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.but{
+    margin-top: 40px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.insidebar{
+    display: flex;
+    /* border: 1px solid black; */
+}
+.insidebar>p{
+    font-size: 13px;
+}
+/* .firstBox{
+    border: 1px solid red;
+}  */
+.firstBox >h1{
+   font-size: x-large;
+   font-weight: bolder;
+}
+
+
+@media screen and (max-width: 1024px) and (min-width:500px) {
+    .GridBox{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 60px;
+        border: 1px solid red;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+  }
+
+
+
+
+
+
+
+  @media screen and (max-width: 500px) and (min-width:10px) {
+    .GridBox{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* width: 50%; */
+        margin: auto;
+        gap: 60px;
+        border: 1px solid red;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .firstBox{
+    border: 1px solid red;
+
+} 
+.firstBox>h1{
+    border: 1px solid red;
+    font-size: xxx-large;
+    text-align: center;
+
+} 
+
+.but{
+    margin-top: 100px;
+    width: 30%;
+    letter-spacing: 5px;
+    margin-left: 25%;
+    height: 50%;
+}
+.insidebar>p{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.insidebar>img{
+     width: 1200px;
+}
+  }
