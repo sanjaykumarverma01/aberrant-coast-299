@@ -93,7 +93,7 @@ const Foods = () => {
 
       </Box>
 
-    
+     </div>
       <InsideFooter/>
     </div>
   )
