@@ -6,7 +6,7 @@
     margin-top: 20px;
     display: flex;
     gap: 20px;
-    /* border: 1px solid red; */
+    /* border: 10px solid red; */
     justify-content: center;
     color: rgb(83, 80, 80);
 }
@@ -59,3 +59,40 @@
     width: 70%;
     height: 70%;
 }
+
+
+@media screen and (max-width: 1197px) and (min-width:500px) {
+    .footer{
+        width: 1200px;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+    .bottomFotter{
+        background-color: #4f4e53;
+        text-align: center;
+        height: 250px;
+        width: 1200px;
+        /* border: 5px solid black; */
+    }
+  }
+
+
+
+
+
+
+
+  @media screen and (max-width: 500px) and (min-width:10px) {
+    .footer{
+        width: 1200px;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+    .bottomFotter{
+        background-color: #4f4e53;
+        text-align: center;
+        height: 250px;
+        width: 1200px;
+        /* border: 5px solid black; */
+    }
+  }
