@@ -361,7 +361,7 @@ const Nutrition = () => {
                     <div>
                         <h4>{value.per}</h4>
                     </div>
-                    <div style={{border:"1px solid grey",width:"100px",textAlign:"center",borderRadius:"20px"}}>
+                    <div style={{border:"1px solid grey",width:"100px",textAlign:"center",borderRadius:"5px"}}>
                         <button>{value.unit}</button>
                     </div>
                 </div>
@@ -384,7 +384,7 @@ const Nutrition = () => {
                     <div>
                         <h4>{value.c}</h4>
                     </div>
-                    <div style={{border:"1px solid grey",width:"100px",textAlign:"center",borderRadius:"20px"}}>
+                    <div style={{border:"1px solid grey",width:"100px",textAlign:"center",borderRadius:"5px"}}>
                         <button>{value.d}</button>
                     </div>
                 </div>
@@ -406,7 +406,7 @@ const Nutrition = () => {
                     <div>
                         <h4>{value.P}</h4>
                     </div>
-                    <div style={{border:"1px solid grey",width:"100px",textAlign:"center",borderRadius:"20px"}}>
+                    <div style={{border:"1px solid grey",width:"100px",textAlign:"center",borderRadius:"5px"}}>
                         <button>{value.U}</button>
                     </div>
                 </div>
@@ -427,7 +427,7 @@ const Nutrition = () => {
                     <div>
                         <h4>{value.lipU}</h4>
                     </div>
-                    <div style={{border:"1px solid grey",width:"100px",textAlign:"center",borderRadius:"20px"}}>
+                    <div style={{border:"1px solid grey",width:"100px",textAlign:"center",borderRadius:"5px"}}>
                         <button>{value.lipP}</button>
                     </div>
                 </div>
@@ -449,7 +449,7 @@ const Nutrition = () => {
                     <div>
                         <h4>{value.MinU}</h4>
                     </div>
-                    <div style={{border:"1px solid grey",width:"100px",textAlign:"center",borderRadius:"20px"}}>
+                    <div style={{border:"1px solid grey",width:"100px",textAlign:"center",borderRadius:"5px"}}>
                         <button>{value.MinP}</button>
                     </div>
                 </div>
@@ -472,7 +472,7 @@ const Nutrition = () => {
                     <div>
                         <h4>{value.ProU}</h4>
                     </div>
-                    <div style={{border:"1px solid grey",width:"100px",textAlign:"center",borderRadius:"20px"}}>
+                    <div style={{border:"1px solid grey",width:"100px",textAlign:"center",borderRadius:"5px"}}>
                         <button>{value.ProP}</button>
                     </div>
                 </div>
