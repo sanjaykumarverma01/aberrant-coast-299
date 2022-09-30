@@ -364,7 +364,7 @@ const Plans = () => {
                </Accordion> 
 
       </Box>
-      <Box bg="#4f4e53" pt="40px" pb="40px" color="white" fontSize={{base:"0.4rem",md:"0.75rem",lg:"0.95rem"}}>
+      {/* <Box bg="#4f4e53" pt="40px" pb="40px" color="white" fontSize={{base:"0.4rem",md:"0.75rem",lg:"0.95rem"}}>
         
         <Box w={{base:"100%",md:"80%",lg:"80%"}} m="auto">
           <Flex  w={{base:"60%",md:"20%",lg:"20%"}} gap="20px" margin="auto" justifyContent="center">
@@ -434,7 +434,7 @@ const Plans = () => {
             </Box>
           </Stack>
         </Box>
-      </Box>
+      </Box> */}
     </div>
   )
 }

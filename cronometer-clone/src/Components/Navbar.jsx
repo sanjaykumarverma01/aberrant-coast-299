@@ -77,7 +77,7 @@ const Navbar = () => {
                 fontWeight="400"
                 _hover={{ color: "#FF763F" }}
               >
-                <Link to="">Support</Link>
+                <Link to="/support">Support</Link>
               </Text>
             </Box>
             <Box>
