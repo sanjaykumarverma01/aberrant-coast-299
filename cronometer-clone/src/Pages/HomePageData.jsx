@@ -1,4 +1,11 @@
-import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  Image,
+  Text,
+} from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import HeroImage from "../Assets/cronometer-hero-graphic.png";
@@ -23,8 +30,8 @@ import staff from "../Assets/cronometer-staff-2-p-1600.jpeg";
 const HomePageData = () => {
   return (
     <>
-      <Flex w="75%" m="auto" mt="50px">
-        <Box w="40%" mr="10%">
+      <Flex w="75%" m="auto">
+        <Box w="40%" mr="10%" mt="50px">
           <Box color="#4F4F52">
             <Heading size="2xl">Eat smarter.</Heading>
             <Heading size="2xl">Live better.</Heading>
@@ -54,7 +61,7 @@ const HomePageData = () => {
             </Text>
           </Box>
         </Box>
-        <Box w="40%">
+        <Box w="40%" mt="30px">
           <Image w="100%" src={HeroImage} alt />
         </Box>
       </Flex>
@@ -422,7 +429,13 @@ const HomePageData = () => {
           </Box>
         </Box>
       </Box>
-      <Box borderTop="1px solid lightgray" align="center" w="75%" m="auto" pb="50px">
+      <Box
+        borderTop="1px solid lightgray"
+        align="center"
+        w="75%"
+        m="auto"
+        pb="50px"
+      >
         <Text fontSize="2xl" color="#4F4F52" mt="50px">
           Help us spread the good word about nutrition and become an affiliate.
         </Text>
