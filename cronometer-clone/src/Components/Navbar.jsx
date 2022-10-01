@@ -104,16 +104,17 @@ const Navbar = () => {
                 fontWeight="400"
                 _hover={{ color: "#FF763F" }}
               >
-                <Link to="/about" >About</Link>
+                <Link to="/about">About</Link>
               </Text>
             </Box>
             <Box>
               <Button
                 w="8rem"
-                border="2px solid orange"
+                border="2px solid #FF763F"
                 color="#FF763F"
                 bgColor="white"
                 fontWeight="600"
+                fontSize="lg"
               >
                 <Link to="/login">Login</Link>
               </Button>

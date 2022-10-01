@@ -7,10 +7,10 @@ import Helps from "../Components/AfterLogin/pages/Helps";
 import Foods from "../Components/AfterLogin/pages/Foods";
 import Plans from "../Components/AfterLogin/pages/Plans";
 import Settings from "../Components/AfterLogin/pages/Settings";
-import Trends from "../Components/AfterLogin/pages/Trends"
-import Support from '../Components/AfterLogin/pages/Support';
+import Trends from "../Components/AfterLogin/pages/Trends";
+import Support from "../Components/AfterLogin/pages/Support";
 import Home from "../Pages/Home";
-
+import About from "../Components/About";
 const AllRoutes = () => {
   return (
     <div>
@@ -24,10 +24,8 @@ const AllRoutes = () => {
         <Route path="/plans" element={<Plans/>}/>
         <Route path="/Helps" element={<Helps/>}/>
         <Route path='/support' element={<Support/> }/>
-       
         <Route path="/" element={<Home />} />
-       
-
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );
