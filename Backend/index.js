@@ -11,13 +11,14 @@ const app = express()
 
 app.use(express.json())
 app.use(validate)
-
+app.use("/auth",Loginrouter)
 app.use("/auth",Signinrouter)
+app.use(authentication)
 app.use("/crono",exerciseRoutes)
 app.use("/food",userFoodRoutes)
 
-app.use("/auth",Loginrouter)
-app.use(authentication)
+
+
 const PORT = process.env.PORT
 app.listen(PORT,async()=>{
  try{
