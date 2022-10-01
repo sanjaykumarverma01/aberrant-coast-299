@@ -1,23 +1,20 @@
 .navbar{
     display: flex;
-    /* border: 1px solid rgb(203, 201, 201); */
-    border-bottom: 1px solid rgb(203, 201, 201);
-   gap: 20%;
-
+    border: 1px solid rgb(207, 37, 37);
+    gap: 300px;
 }
 .logo{
-    /* border: 1px solid rgb(32, 18, 18); */
-    padding-left: 10px;
-    width: 12%;
+ width: 250px;
+
 }
 .links{
-    /* border: 1px solid rgb(32, 18, 18); */
-    display: flex;
+    border: 1px solid rgb(32, 18, 18);
     gap: 60px;
-    padding-top: 10px;
-    font-size: medium;
+    display: flex;
+    padding-top: 22px;
+    font-size: x-large;
     font-weight: 700;
-    margin-left: 65px;
+    
 }
 .link{
     text-decoration: none;
@@ -26,4 +23,7 @@
 .link:hover{
     text-decoration: none;
     color: rgb(175, 50, 33);
+}
+.logout{
+    border: 1px solid red;
 }
