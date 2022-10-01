@@ -1,6 +1,7 @@
 import React from 'react'
 import {Search2Icon } from '@chakra-ui/icons'
 import {Box,Flex,Spacer,Image,Text,Input,InputGroup,InputLeftElement,Grid,GridItem} from "@chakra-ui/react";
+import { Link } from 'react-router-dom';
 const Support = () => {
   return (
     <div>
@@ -10,7 +11,9 @@ const Support = () => {
 
           <Flex >
            <Box p="4">
+            <Link to="/">
             <Image w="120px"  src='https://theme.zdassets.com/theme_assets/197219/111fe6921e8b22116b39eaa745ea08e38a718e0d.png' alt='Dan Abramov' />
+            </Link>
            </Box>
              <Spacer />
            <Box p='4' color={"orange"}>

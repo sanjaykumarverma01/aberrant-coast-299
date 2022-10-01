@@ -104,7 +104,7 @@ const Navbar = () => {
                 fontWeight="400"
                 _hover={{ color: "#FF763F" }}
               >
-                <Link>About</Link>
+                <Link to="/about" >About</Link>
               </Text>
             </Box>
             <Box>
