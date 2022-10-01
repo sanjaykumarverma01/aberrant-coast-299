@@ -15,8 +15,6 @@ const AllRoutes = () => {
   return (
     <div>
       <Routes>
-
-
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/signin" element={<Signin/>}></Route>
         <Route path="/dairy" element={<Dairy/>}/>

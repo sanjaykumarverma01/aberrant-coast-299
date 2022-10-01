@@ -115,7 +115,7 @@ const Navbar = () => {
                 bgColor="white"
                 fontWeight="600"
               >
-                <Link to="">Login</Link>
+                <Link to="/login">Login</Link>
               </Button>
             </Box>
           </HStack>
