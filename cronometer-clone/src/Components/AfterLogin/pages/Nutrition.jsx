@@ -5,40 +5,33 @@ import Vitamins from './Vitamins';
 const Nutrition = () => {
 
     const data={
-        general : [
+    general : [
         {
             id:1,
-            title:"B1 (Thiamine)",
-            cal:0.0,
-            per:"mg",
+            title:"Energy",
+            cal:25.2,
+            per:"kcal",
             unit:"1%"
         },
         {
             id:2,
-            title:"B1 (Thiamine)",
+            title:"Alcohol",
             cal:0.0,
-            per:"mg",
-            unit:"1%"
+            per:"g",
+            unit:"0%"
         },
         {
             id:3,
-            title:"B1 (Thiamine)",
+            title:"Coffeine",
             cal:0.0,
             per:"mg",
             unit:"1%"
         },
         {
             id:4,
-            title:"B1 (Thiamine)",
-            cal:0.0,
-            per:"mg",
-            unit:"1%"
-        },
-        {
-            id:5,
-            title:"B1 (Thiamine)",
-            cal:0.0,
-            per:"mg",
+            title:"Water",
+            cal:21.2,
+            per:"g",
             unit:"1%"
         }
     ],

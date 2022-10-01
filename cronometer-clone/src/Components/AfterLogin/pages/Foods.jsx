@@ -8,8 +8,6 @@ import { LockIcon,ArrowUpDownIcon,WarningIcon,ArrowBackIcon } from '@chakra-ui/i
 import foodpic from "../images/foodpic.png"
 
 
-
-
 const Foods = () => {
   return (
     <div>

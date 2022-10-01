@@ -1,188 +1,274 @@
-.dairy{
-    width: 1200px;
-    /* border: 5px solid red; */
-    margin: auto;
-    margin-top:30px;
-    display: flex;
-   gap: 70px;
-}
- 
-.firstbox{
-    text-align: center;
-    display: grid;
-    border-bottom: 1px solid rgb(124, 122, 122);
-    /* border: 1px solid rgb(136, 41, 41); */
-    width: 40%;
-    justify-content: center;
+.dairy {
+  width: 1200px;
+  border: 5px solid red;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  gap: 70px;
 }
 
-.secondBox{
-    /* text-align: center; */
-    /* border: 1px solid rgb(39, 30, 30); */
-    width: 100%;
-}
-.contain{
-    display: flex;
-    gap: 50px;
-    height: 50px;
-    /* border: 1px solid rgb(18, 214, 61); */
-    width: 100%;
-}
-.contain >button{
-    /* border: 1px solid red; */
-    height:30px;
-    margin-top:15px;
-}
-.contain >button>span{
-    padding-right: 10px;
-    padding-top: 4px;
-    color: blue;
+.firstbox {
+  text-align: center;
+  display: grid;
+  border-bottom: 1px solid rgb(124, 122, 122);
+  width: 40%;
+  justify-content: center;
 }
 
-.symbol{
-    gap: 20px;
-    /* padding-top: 5px; */
-    margin-left: 20px;
-    margin-bottom: 30px;
-    /* border: 1px solid red; */
-    margin-top: 5px;
+.secondBox {
+  width: 100%;
 }
-.date >h4{
-    font-size: larger;
-   font-weight: 700;
-    color: rgb(219, 91, 16);
-    display: flex;
-    gap: 20px;
-
+.contain {
+  display: flex;
+  gap: 50px;
+  height: 50px;
+  width: 100%;
 }
-.firstbox >h5{
-    font-size: larger;
-   font-weight: 700;
-   margin-top: 20px;
-   border-bottom: 1px solid grey;
-  
-
+.contain > button {
+  height: 30px;
+  margin-top: 15px;
 }
-.logof{
-    color: red;
-    margin-right: 10px;
-    text-align: center;
-    font-size: large;
-
-}
-.logoL{
-    color: rgb(245, 205, 28);
-    padding-right: 10px;
-    text-align: center;
-    font-size: large;
-}
-.logoB{
-    color: rgb(25, 0, 255);
-    font-size: large;
-    padding-right: 10px;
-    text-align: center;
+.contain > button > span {
+  padding-right: 10px;
+  padding-top: 4px;
+  color: blue;
 }
 
-.threedots{
-   margin-top: 20px;
-   margin-left: 90px;
+.symbol {
+  gap: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+.date > h4 {
+  font-size: larger;
+  font-weight: 700;
+  color: rgb(219, 91, 16);
+  display: flex;
+  gap: 20px;
+}
+.firstbox > h5 {
+  font-size: larger;
+  font-weight: 700;
+  margin-top: 20px;
+  border-bottom: 1px solid grey;
+}
+.logof {
+  color: red;
+  margin-right: 10px;
+  text-align: center;
+  font-size: large;
+}
+.logoL {
+  color: rgb(245, 205, 28);
+  padding-right: 10px;
+  text-align: center;
+  font-size: large;
+}
+.logoB {
+  color: rgb(25, 0, 255);
+  font-size: large;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.threedots {
+  margin-top: 20px;
+  margin-left: 90px;
 }
 /* .tablemain{
     border: 1px solid rgb(165, 33, 16);
 } */
-.tableinside{
-    display: flex;
-    border-bottom: 1px solid rgb(124, 122, 122);
+.tableinside {
+  display: flex;
+  border-bottom: 1px solid rgb(124, 122, 122);
 }
-.tableA{
-    padding-left: 270px;
+.tableA {
+  padding-left: 270px;
 }
-.tableU{
-    padding-left: 20px;
+.tableU {
+  padding-left: 20px;
 }
-.tableshow{
-    display: flex;
-    font-size: 12px;
+.tableshow {
+  display: flex;
+  font-size: 12px;
 }
-.tableAa{
-    padding-left: 350px;
+.tableAa {
+  padding-left: 350px;
 }
-.nutBox{
-    display: flex;
+.nutBox {
+  display: flex;
 }
-.imggraph{
-   /* border: 1px solid rgb(15, 10, 10); */
-   width: 1200px;
+.imggraph {
+  /* border: 1px solid rgb(15, 10, 10); */
+  width: 1200px;
 }
-.pia{
-    /* border: 1px solid red; */
-    /* margin-left: 370px; */
-    width: 100%;
-    /* height: 60px; */
-    /* padding-top: 20px; */
-    margin-right: 20px;
+.pia {
+  /* border: 1px solid red; */
+  /* margin-left: 370px; */
+  width: 100%;
+  /* height: 60px; */
+  /* padding-top: 20px; */
+  margin-right: 20px;
 }
-.piaFirst{
-    display: flex;
-    /* border: 1px solid red; */
-    width: 50%;
-    gap: 20px;
-    text-align: center;
-    margin-top: 40px;
+.piaFirst {
+  display: flex;
+  /* border: 1px solid red; */
+  width: 50%;
+  gap: 20px;
+  text-align: center;
+  margin-top: 40px;
 }
-.chart{
-    /* border: 1px solid red; */
-    width: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    height:150px;
+.chart {
+  /* border: 1px solid red; */
+  width: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 150px;
 }
 
 /* .piasecond{
     width: 100%;
     border: 1px solid red;
 } */
-.nuttable{
-    display: flex;
-    gap: 100px;
-    margin-top: 45px;
+.nuttable {
+  display: flex;
+  gap: 100px;
+  margin-top: 45px;
 }
-.h1border{
-    border-bottom: 1px solid grey;
-    padding-bottom: 10px;
-}
-
-.con{
-    display: flex;
-
-}
-.consecond{
-    /* margin-left: 370px; */
-    /* border: 10px solid red; */
-    width: 1000px;
-    margin-bottom: 30px;
-}
-.circles{
-    display: flex;
-    gap: 20px;
-}
-.circleNut{
-    margin-top: 20px;
-    /* border: 1px solid red; */
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    width: 10%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    border-radius: 50px;
-}
-.circleNut>h2{
-    font-size: large;
-    font-weight: bold;
+.h1border {
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
 }
 
-  .label:after       { content:'Fiber'; }
-  .label:hover:after { content:'g'; }
-  .h2:after      { content:'0%'; }
-  .h2:hover:after { content:'0.0'; }
- 
+.con {
+  display: flex;
+}
+.consecond {
+  /* margin-left: 370px; */
+  /* border: 10px solid red; */
+  width: 1000px;
+  margin-bottom: 30px;
+}
+.circles {
+  display: flex;
+  gap: 20px;
+}
+.circleNut {
+  margin-top: 20px;
+  /* border: 1px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-radius: 50px;
+}
+.circleNut > h2 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.a:after {
+  content: "0%";
+}
+.a:hover:after {
+  content: "0.0";
+}
+.A:after {
+  content: "Fiber";
+}
+.A:hover:after {
+  content: "g";
+}
+
+.b:after {
+  content: "0%";
+}
+.b:hover:after {
+  content: "0.0";
+}
+.B:after {
+  content: "Iron";
+}
+.B:hover:after {
+  content: "mg";
+}
+
+.c:after {
+  content: "0%";
+}
+.c:hover:after {
+  content: "0.0";
+}
+.C:after {
+  content: "Calcium";
+}
+.C:hover:after {
+  content: "mg";
+}
+
+.d:after {
+  content: "0%";
+}
+.d:hover:after {
+  content: "0.0";
+}
+.D:after {
+  content: "Vit.A";
+}
+.D:hover:after {
+  content: "ug";
+}
+
+.e:after {
+  content: "0%";
+}
+.e:hover:after {
+  content: "0.0";
+}
+.E:after {
+  content: "Vit.C";
+}
+.E:hover:after {
+  content: "mg";
+}
+
+.f:after {
+  content: "0%";
+}
+.f:hover:after {
+  content: "0.0";
+}
+.F:after {
+  content: "Vit.B12";
+}
+.F:hover:after {
+  content: "ug";
+}
+
+.g:after {
+  content: "0%";
+}
+.g:hover:after {
+  content: "0.0";
+}
+.G:after {
+  content: "folate";
+}
+.G:hover:after {
+  content: "ug";
+}
+
+.h:after {
+  content: "0%";
+}
+.h:hover:after {
+  content: "0.0";
+}
+.H:after {
+  content: "Potassium";
+}
+.H:hover:after {
+  content: "mg";
+}
