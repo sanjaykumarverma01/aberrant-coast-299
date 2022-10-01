@@ -116,7 +116,7 @@ const Footer = () => {
             </Box>
           </Flex>
         </Box>
-        <Box color="white" fontSize="lg" mt="30px" pb="50px">
+        <Box color="white" fontSize="lg" mt="30px" pb="50px" textAlign="center">
             <Text>Copyright © 2011-2022</Text>
             <Text>All rights reserved</Text>
         </Box>

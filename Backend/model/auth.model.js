@@ -1,11 +1,11 @@
-const { Schema, default: mongoose } = require("mongoose")
+const { Schema,model } = require("mongoose")
 
 
 const userSchema = new Schema({
     email:String,
      weight:String,
      password:String,
-     confirmpassword:String,
+     
      centimeter:String,
 Height:String,
      sex:String,
@@ -13,8 +13,6 @@ Height:String,
      date:String,
 })
 
-const User = mongoose.model("user",userSchema)
+const User = model("user",userSchema)
 
-module.exports = {
-    User
-}
+module.exports =  User

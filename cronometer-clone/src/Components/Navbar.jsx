@@ -77,7 +77,7 @@ const Navbar = () => {
                 fontWeight="400"
                 _hover={{ color: "#FF763F" }}
               >
-                <Link to="">Support</Link>
+                <Link to="/support">Support</Link>
               </Text>
             </Box>
             <Box>
@@ -104,7 +104,7 @@ const Navbar = () => {
                 fontWeight="400"
                 _hover={{ color: "#FF763F" }}
               >
-                <Link>About</Link>
+                <Link to="/about" >About</Link>
               </Text>
             </Box>
             <Box>
@@ -115,7 +115,7 @@ const Navbar = () => {
                 bgColor="white"
                 fontWeight="600"
               >
-                <Link to="">Login</Link>
+                <Link to="/login">Login</Link>
               </Button>
             </Box>
           </HStack>
