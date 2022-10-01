@@ -16,10 +16,14 @@ import { Community } from "../Blogs/Comp/Community";
 import { NewArr } from "../Blogs/Comp/NewArr";
 import { Popular } from "../Blogs/Comp/Popular";
 import { FirstBox1 } from "../Blogs/Comp/FirstBox";
+import Navbar from "../Navbar";
+
 
 export const Blog = () => {
   return (
     <Box>
+    
+    <Navbar/>
       <Box mt={10}>
         <FirstBox />
       </Box>
