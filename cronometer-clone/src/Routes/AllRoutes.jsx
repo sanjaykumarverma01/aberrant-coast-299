@@ -15,15 +15,15 @@ const AllRoutes = () => {
   return (
     <div>
       <Routes>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/signin" element={<Signin />}></Route>
-        <Route path="/dairy" element={<Dairy />} />
-        <Route path="/trends" element={<Trends />} />
-        <Route path="/foods" element={<Foods />} />
-        <Route path="/setting" element={<Settings />} />
-        <Route path="/plans" element={<Plans />} />
-        <Route path="/Helps" element={<Helps />} />
-        <Route path="/support" element={<Support />} />
+        <Route path="/login" element={<Login/>}></Route>
+        <Route path="/signin" element={<Signin/>}></Route>
+        <Route path="/dairy" element={<Dairy/>}/>
+        <Route path="/trends" element={<Trends/>}/>
+        <Route path="/foods" element={<Foods/>}/>
+        <Route path="/setting" element={<Settings/>}/>
+        <Route path="/plans" element={<Plans/>}/>
+        <Route path="/Helps" element={<Helps/>}/>
+        <Route path='/support' element={<Support/> }/>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>

@@ -50,11 +50,20 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 60px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin-top: 50px;
         margin-bottom: 50px;
         padding-left: 30px;
         padding-right: 30px;
+    }
+    .insidebar>p{
+        font-size: 20px;
+    }
+    .heading>h1{
+        font-size: 40px
+    }
+    .heading>p{
+        font-size: 22px
     }
   }
 
@@ -71,18 +80,14 @@
         /* width: 50%; */
         margin: auto;
         gap: 60px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin-top: 50px;
         margin-bottom: 50px;
         padding-left: 30px;
         padding-right: 30px;
     }
-    .firstBox{
-    border: 1px solid red;
-
-} 
 .firstBox>h1{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-size: xxx-large;
     text-align: center;
 
@@ -101,5 +106,11 @@
 }
 .insidebar>img{
      width: 1200px;
+}
+.heading>h1{
+    font-size: 40px
+}
+.heading>p{
+    font-size: 30px
 }
   }
