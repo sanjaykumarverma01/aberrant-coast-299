@@ -29,74 +29,45 @@ https://cronometer-clone.netlify.app/
 
 - *Landing Page*
 
-  ![Screenshot (901)](https://user-images.githubusercontent.com/101388961/187072296-15c5b11d-88d4-4c25-bc83-0b9aab7287a2.png)
+  ![](https://github.com/sanjaykumarverma01/aberrant-coast-299/blob/main/ScreenShots/Homepage%201.PNG?raw=true)
 
+  ![](https://github.com/sanjaykumarverma01/aberrant-coast-299/blob/main/ScreenShots/Homepage%202.PNG?raw=true)
 
-- *Learn and Grow section*
+- *Sign Up*
 
-  ![Screenshot (902)](https://user-images.githubusercontent.com/101388961/187072383-f2b7dc1d-a779-4ff0-9b72-d3fd183d965e.png)
+  ![](https://github.com/sanjaykumarverma01/aberrant-coast-299/blob/main/ScreenShots/signup1.PNG?raw=true)
+  
+  ![](https://github.com/sanjaykumarverma01/aberrant-coast-299/blob/main/ScreenShots/signup2.PNG?raw=true)
 
 - *Login Page*
 
-  ![Screenshot (903)](https://user-images.githubusercontent.com/101388961/187072435-a650faf1-acc9-4981-bc6d-569b5f4625b3.png)
+  ![](https://github.com/sanjaykumarverma01/aberrant-coast-299/blob/main/ScreenShots/login.PNG?raw=true)
 
-- *Software CRM Page*
+- *After Login*
 
-  ![Screenshot (904)](https://user-images.githubusercontent.com/101388961/187072477-16c1725c-f901-498e-9e2f-7291c7ac8be2.png)
+  ![](https://github.com/sanjaykumarverma01/aberrant-coast-299/blob/main/ScreenShots/afterlogin1.PNG?raw=true)
+  
+  ![](https://github.com/sanjaykumarverma01/aberrant-coast-299/blob/main/ScreenShots/afterlogin%202.PNG?raw=true)
+  
+  ![](https://github.com/sanjaykumarverma01/aberrant-coast-299/blob/main/ScreenShots/model.PNG?raw=true)
 
-- *Pricing Page*
+- *Footer*
 
-  ![Screenshot (905)](https://user-images.githubusercontent.com/101388961/187072525-c33b064c-458b-4951-bb91-ecc51159043a.png)
-
-
-- *Subscription Page*
-
-  ![Screenshot (906)](https://user-images.githubusercontent.com/101388961/187072568-e89f3c34-031c-428d-b91e-48fef92e9bd2.png)
-
-- *Review Page*
-
-  ![Screenshot (909)](https://user-images.githubusercontent.com/101388961/187072596-85d7265b-8b26-437a-b331-93b9cff2bf6c.png)
-
-  - *Contact-us Page*
-
-  ![Screenshot (908)](https://user-images.githubusercontent.com/101388961/187072626-1f8c1c34-ff58-4347-b849-d662dda34811.png)
+  ![](https://github.com/sanjaykumarverma01/aberrant-coast-299/blob/main/ScreenShots/Footer.PNG?raw=true)
 
 
 ---
-
-### About Project
-
-> We did this project within 4 days in our unit-5 construct week.
-We have also add some cool functionality in our software page where 
-you can watch video of our marketing tools ans in our pricing page you can see our subscription fees for different services and user
-can Login to buy the courses.
-
----
-
-------
-
-### Netlify Link
-
-https://clone-hubspot.netlify.app
-------
- 
-<h1>WEBSITE USER FLOW ></h1>
-
-The user flow that we tried to maintain is,
-
-home -> login -> dashboard -> create user Id-> Enter email details -> 
-Enter password -> Landing page-> -> Software page -> Pricing page -> Buy now.
 
  <h1>TEAM MEMBERS AND MESSAGE></h1>
 we really enjoyed this whole part of developing and had a learing experience and have given our best efforts to bring the BEST thing as POSSIBLE.
 
 ### Team Members
 
-- **[Raj Mandloi]**
-- **[Karan Joshi]**
-- **[Ranajit Das]**
-- **[Sanjaykumar Verma]**
-- **[Sayan Mukherjee]**
+- **[Taruna]**
+- **[Manish]**
+- **[Sanjaykumar]**
+- **[Swapnil]**
+- **[Rohit]**
 
 ---
 
