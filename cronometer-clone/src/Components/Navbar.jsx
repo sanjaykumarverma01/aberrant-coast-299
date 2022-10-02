@@ -26,14 +26,18 @@ const Navbar = () => {
     setArrow(status);
   };
   return (
-    <Box w="80%" m="auto" p="2.5%">
+    <Box w="80%" m="auto" p="2.5%" size={["xs", "sm", "md", "lg"]}>
       <Flex justifyContent="space-between" alignItems="center">
-        <Box w="40%">
-          <Box w="50%" textAlign="center">
+        <Box w={["70%", "70%", "40%"]}>
+          <Box w={["90%", "90%", "50%"]} textAlign="center">
             <Image src={logo} alt="logo" w="100%" />
           </Box>
         </Box>
-        <Flex w="60%" justifyContent="space-between">
+        <Flex
+          w="60%"
+          justifyContent="space-between"
+          display={["none", "none", "block"]}
+        >
           <HStack justifyContent="space-evenly" w="100%">
             <Popover>
               <PopoverTrigger>
@@ -121,6 +125,18 @@ const Navbar = () => {
             </Box>
           </HStack>
         </Flex>
+        <Box display={["block", "block", "none"]} mt="2px">
+          <Button
+            w="5rem"
+            border="2px solid #FF763F"
+            color="#FF763F"
+            bgColor="white"
+            fontWeight="500"
+            fontSize="md"
+          >
+            <Link to="/login">Login</Link>
+          </Button>
+        </Box>
       </Flex>
     </Box>
   );
