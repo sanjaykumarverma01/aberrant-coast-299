@@ -28,7 +28,7 @@ const Dairy = () => {
           <div className={styles.date}>
             <h4 onClick={() => setOpen((prev) => !prev)}>
               {" "}
-              <BiLeftArrow className={styles.symbol} /> September 28,2022{" "}
+              <BiLeftArrow className={styles.symbol} /> October 2,2022{" "}
               <BiRightArrow className={styles.symbol} />
             </h4>
             {open && (
@@ -39,7 +39,7 @@ const Dairy = () => {
           </div>
           <img src="https://s0.2mdn.net/simgad/9642918159393658806" alt="" />
 
-          <div>
+          <div className={styles.h5}>
             <h5>Energy History (kcal)</h5>
           </div>
         </div>
@@ -74,55 +74,7 @@ const Dairy = () => {
             </button>
             <BsThreeDotsVertical className={styles.threedots} />
 
-            {/* <div> */}
-            {/* <Popover >
-            <PopoverTrigger>
-              <Button color="orange.500" size="lg" onClick={handleArrow}>{open ? <IoMdArrowDropdown/> : <IoMdArrowDropup/>}</Button>
-            </PopoverTrigger>
-            <Portal >
-              <PopoverContent w="550px" h='300px' boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px" ml='100px'>
-                <PopoverArrow />
-                <Flex>
-                <PopoverHeader display="flex">Signed in as: swapnilramteke004@gmail.com</PopoverHeader>
-                <PopoverCloseButton />
-                <PopoverBody>
-                <Button colorScheme='orange' variant='outline' ml='30px'>
-                    Logout
-                  </Button>
-                </PopoverBody>
-                </Flex>
-                <Grid templateColumns='repeat(2, 1fr)' gap={6} mt='20px'>
-                  <GridItem border='1px solid white'  _hover={{border:"1px solid rgb(221, 99, 17)"}} pl='20px'>
-                    <Flex  gap={20}>
-                      <Text fontSize='2xl'>Gold</Text>
-                      <Text fontSize='sm'>$49.99USD/Year</Text>
-                    </Flex>
-                    <Box>
-                      <Text fontSize='xs' mt='20px'>Our primimum features likes timestamps and food suggestion will help you plan customers and share your prefect diet</Text>
-                    </Box>
-                    <Link to="/plan" border='1px solid red'>
-                      <Text ml='60%' mt='70px' color='rgb(221, 99, 17)'>Learn More</Text>
-                      </Link>
-                  </GridItem >
-
-
-                  <GridItem border='1px solid white'  _hover={{border:"1px solid rgb(221, 99, 17)"}} pl='20px'>
-                    <Flex  gap={10}>
-                      <Text fontSize='2xl'>Professional</Text>
-                      <Text fontSize='sm'>$29.95/mo</Text>
-                    </Flex>
-                    <Box>
-                      <Text fontSize='xs' mt='20px'>Are you a Coach or Healthcare professional that believes diet is a critical compoenets heatlh and fitness ? Learn how you can monitor clients nutrients in real time with Cronamerter pro</Text>
-                    </Box>
-                    <Link to="/plan" border='1px solid red'>
-                      <Text ml='60%' mt='40px' color='rgb(221, 99, 17)'>Learn More</Text>
-                      </Link>
-                  </GridItem >
-                </Grid>
-              </PopoverContent>
-            </Portal>
-          </Popover>
-         </div> */}
+        
           </div>
           <div className={styles.tablemain}>
             <div className={styles.tableinside}>
@@ -137,12 +89,25 @@ const Dairy = () => {
                 <span>
                   <BsApple className={styles.logof} />
                 </span>{" "}
-                ADD FOOD
+                Banana,Fresh
               </p>
-              <p className={styles.tableA}>215</p>
-              <p className={styles.tableU}>L</p>
-              <p className={styles.tableAa}>0</p>
+              <p className={styles.tableA}>1</p>
+              <p className={styles.tableU}>oz</p>
+              <p className={styles.tableAa}>25.23</p>
             </div>
+
+            <div className={styles.tableshow}>
+              <p style={{ display: "flex" }}>
+                <span>
+                  <BsApple className={styles.logof} />
+                </span>{" "}
+                Apple,Fresh,With,Skin
+              </p>
+              <p className={styles.table2A}>1</p>
+              <p className={styles.tableU}>oz</p>
+              <p className={styles.tableAa}>94.64</p>
+            </div>
+
           </div>
         </div>
       </div>
@@ -159,21 +124,21 @@ const Dairy = () => {
             <div className={styles.piaFirst}>
               <div>
                 <CircularProgress value={40} size="120px" color="green.400">
-                  <CircularProgressLabel>40 kcal</CircularProgressLabel>
+                  <CircularProgressLabel fontSize="lg">120 kcal</CircularProgressLabel>
                 </CircularProgress>
                 <h1>CONSUMED</h1>
               </div>
 
               <div>
                 <CircularProgress value={80} size="120px" color="red.600">
-                  <CircularProgressLabel>80 kcal</CircularProgressLabel>
+                  <CircularProgressLabel fontSize="lg">1884 kcal</CircularProgressLabel>
                 </CircularProgress>
                 <h1>BURNED</h1>
               </div>
 
               <div>
                 <CircularProgress value={60} size="120px" color="blue.600">
-                  <CircularProgressLabel>60 kcal</CircularProgressLabel>
+                  <CircularProgressLabel fontSize="lg">1764 kcal</CircularProgressLabel>
                 </CircularProgress>
                 <h1>BUDGET</h1>
               </div>
@@ -192,10 +157,10 @@ const Dairy = () => {
               </div>
 
               <div>
-                <h1>0.0kcal/1884kcal(0%)</h1>
-                <h1>0.0g/117.8(0%)</h1>
-                <h1>0.0g/212.0g(0%)</h1>
-                <h1>0.0g/62.8g(0%)</h1>
+                <h1>119.9kcal/1884kcal(6%)</h1>
+                <h1>0.8g/117.8(1%)</h1>
+                <h1>25.0g/212.0g(12%)</h1>
+                <h1>0.4g/62.8g(1%)</h1>
               </div>
             </div>
           </div>

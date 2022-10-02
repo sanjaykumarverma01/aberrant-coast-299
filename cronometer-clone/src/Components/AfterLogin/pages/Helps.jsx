@@ -23,7 +23,7 @@ const Helps = () => {
                       <p>Our video tutorial series will teach you everything you need to know about our application,goals and want someone who can work with you using Cronometer one feature at a time.</p>
 
                     </div>
-                    <Button className={styles.but}  styles={{marginTop:"20px"}} colorScheme="green" rightIcon={<MdPlayArrow />}>
+                    <Button className={styles.but} styles={{marginTop:"20px"}} colorScheme="green" rightIcon={<MdPlayArrow />}>
     WATCH
   </Button>
                 </div>

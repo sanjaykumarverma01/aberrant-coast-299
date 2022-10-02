@@ -1,6 +1,6 @@
 .dairy {
   width: 1200px;
-  border: 5px solid red;
+  /* border: 5px solid red; */
   margin: auto;
   margin-top: 30px;
   display: flex;
@@ -10,7 +10,7 @@
 .firstbox {
   text-align: center;
   display: grid;
-  border-bottom: 1px solid rgb(124, 122, 122);
+  /* border-bottom: 1px solid rgb(124, 122, 122); */
   width: 40%;
   justify-content: center;
 }
@@ -47,10 +47,10 @@
   display: flex;
   gap: 20px;
 }
-.firstbox > h5 {
+.h5 {
   font-size: larger;
-  font-weight: 700;
-  margin-top: 20px;
+  font-weight: 500;
+  margin-top: 30px;
   border-bottom: 1px solid grey;
 }
 .logof {
@@ -127,10 +127,6 @@
   height: 150px;
 }
 
-/* .piasecond{
-    width: 100%;
-    border: 1px solid red;
-} */
 .nuttable {
   display: flex;
   gap: 100px;
@@ -168,12 +164,16 @@
   font-size: large;
   font-weight: bold;
 }
+.table2A{
+   /* border: 1px solid red; */
+   margin-left: 225px;
+}
 
 .a:after {
-  content: "0%";
+  content: "13%";
 }
 .a:hover:after {
-  content: "0.0";
+  content: "5.1";
 }
 .A:after {
   content: "Fiber";
@@ -183,10 +183,10 @@
 }
 
 .b:after {
-  content: "0%";
+  content: "3%";
 }
 .b:hover:after {
-  content: "0.0";
+  content: "0.3";
 }
 .B:after {
   content: "Iron";
@@ -196,10 +196,10 @@
 }
 
 .c:after {
-  content: "0%";
+  content: "1%";
 }
 .c:hover:after {
-  content: "0.0";
+  content: "12.3";
 }
 .C:after {
   content: "Calcium";
@@ -212,7 +212,7 @@
   content: "0%";
 }
 .d:hover:after {
-  content: "0.0";
+  content: "5.8";
 }
 .D:after {
   content: "Vit.A";
@@ -222,10 +222,10 @@
 }
 
 .e:after {
-  content: "0%";
+  content: "12%";
 }
 .e:hover:after {
-  content: "0.0";
+  content: "10.8";
 }
 .E:after {
   content: "Vit.C";
@@ -248,10 +248,10 @@
 }
 
 .g:after {
-  content: "0%";
+  content: "2%";
 }
 .g:hover:after {
-  content: "0.0";
+  content: "11.1";
 }
 .G:after {
   content: "folate";
@@ -261,10 +261,10 @@
 }
 
 .h:after {
-  content: "0%";
+  content: "8%";
 }
 .h:hover:after {
-  content: "0.0";
+  content: "296.2";
 }
 .H:after {
   content: "Potassium";

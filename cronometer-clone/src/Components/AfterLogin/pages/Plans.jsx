@@ -47,9 +47,8 @@ const Plans = () => {
         direction={{ base: 'column', md: 'row' }}
         textAlign="center"
         justify="center"
-        spacing={{ base: 4, lg: 10 }}
         py={10}>
-        <PriceWrapper border="1px solid black">
+        <PriceWrapper >
           <Box py={2} px={8} >
             <Image src='https://cdn1.cronometer.com/2021/landing/crono-icon-main-nav.svg' w='40px' h='40px' margin='auto'/>
             <br/>
@@ -239,6 +238,7 @@ const Plans = () => {
 
 
       </Box>
+
       <Box textAlign={"center"}>
         <Text color={'orange'} fontWeight="400" fontSize={'3xl'} mb="20px">Frequently Asked Questions</Text>
       </Box>
