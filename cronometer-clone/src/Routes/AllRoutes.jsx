@@ -12,13 +12,18 @@ import Support from "../Components/AfterLogin/pages/Support";
 import Home from "../Pages/Home";
 import About from "../Components/About";
 import { Blog } from "../Components/Blogs/blog";
+import ReqAuth from "./ReqAuth";
 const AllRoutes = () => {
+
   return (
     <div>
       <Routes>
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/signin" element={<Signin/>}></Route>
-        <Route path="/dairy" element={<Dairy/>}/>
+
+          <Route path="/dairy" element={<ReqAuth><Dairy/></ReqAuth>}/>
+        
+        
         <Route path="/trends" element={<Trends/>}/>
         <Route path="/foods" element={<Foods/>}/>
         <Route path="/setting" element={<Settings/>}/>

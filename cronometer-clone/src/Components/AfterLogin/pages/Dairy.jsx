@@ -10,6 +10,10 @@ import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
 import graph1st from "../images/graph1st.png";
 import graph2 from "../images/graph2.png";
 import Calender from "./calender";
+import { loadData } from "../../../Utils/accessLocalStorage";
+import Modal1 from "./Modal1";
+import { Box } from "@chakra-ui/react";
+
 
 const Dairy = () => {
   const [open, setOpen] = React.useState(false);
@@ -21,7 +25,7 @@ const Dairy = () => {
   };
 
   const day = new Date()
-
+  // const { isOpen, onOpen, onClose } = ()
   return (
     <>
       <InsideNavbar />
@@ -54,8 +58,10 @@ const Dairy = () => {
               <span>
                 <BsApple />
               </span>
-              ADD FOOD
+              <Box mt={-2}><Modal1/></Box>
+              
             </button>
+         
             <button style={{ display: "flex" }}>
               <span>
                 <FaRunning />
