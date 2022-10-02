@@ -6,7 +6,7 @@ import HomePageData from "./HomePageData";
 const Home = () => {
   return (
     <Box>
-      <Navbar />
+      {/* <Navbar /> */}
       <HomePageData/>
       <Footer />
     </Box>
