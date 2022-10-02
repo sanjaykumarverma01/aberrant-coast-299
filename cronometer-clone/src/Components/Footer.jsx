@@ -5,7 +5,6 @@ import {
   HStack,
   Image,
   Text,
-  VStack,
 } from "@chakra-ui/react";
 import React from "react";
 import instagram_logo from "../Assets/social_instagram-icon.png";
@@ -20,9 +19,9 @@ import footer_logo from "../Assets/crono-logo-white.png";
 const Footer = () => {
   return (
     <Box bgColor="#4F4E53">
-      <Box w="80%" m="auto" pt="60px">
+      <Box w={["90%","90%","80%"]} m="auto" pt="60px">
         <Box borderBottom="1px solid white">
-          <Box w="25%" m="auto">
+          <Box w={["60%","60%","25%"]} m="auto">
             <HStack justifyContent="space-evenly">
               <Box h="40px">
                 <Link to="">
@@ -47,11 +46,12 @@ const Footer = () => {
             </HStack>
           </Box>
           <Flex
-            w="30%"
+            w={["70%","70%","30%"]}
             m="auto"
             justifyContent="space-around"
             mt="30px"
             pb="60px"
+            gap={["20px","20px","0"]}
           >
             <Link to="">
               <Image src={ios_logo} alt="ios" />
@@ -61,12 +61,12 @@ const Footer = () => {
             </Link>
           </Flex>
         </Box>
-        <Box pt="60px">
-          <Flex>
-            <Box w="25%">
-              <Image src={footer_logo} alt="logo" w="70%" />
+        <Box pt={["40px","50px","60px"]}>
+          <Flex direction={["column","column","row"]} gap={["25px","25px","0"]}>
+            <Box w={["60%","60%","25%"]} m={["auto","auto","none"]}>
+              <Image src={footer_logo} alt="logo" w={["100%","100%","70%"]} />
             </Box>
-            <Box w="25%" color="white" textAlign="left">
+            <Box w={["60%","60%","25%"]} color="white" textAlign="left">
               <Heading size="md" mb="10px">
                 Cronometer
               </Heading>
@@ -83,7 +83,7 @@ const Footer = () => {
                 <Link to="">Terms</Link>
               </Text>
             </Box>
-            <Box w="25%" color="white" textAlign="left">
+            <Box w={["60%","60%","25%"]} color="white" textAlign="left">
               <Heading size="md" mb="10px">
                 Cronometer
               </Heading>
@@ -103,7 +103,7 @@ const Footer = () => {
                 <Link to="">Support</Link>
               </Text>
             </Box>
-            <Box w="25%" color="white" textAlign="left">
+            <Box w={["60%","60%","25%"]} color="white" textAlign="left">
               <Heading size="md" mb="10px">
                 Partners & Affiliates
               </Heading>
