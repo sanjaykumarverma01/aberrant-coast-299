@@ -39,9 +39,9 @@ const HomePageData = () => {
         </Box>
         <Box
           w={["90%", "90%", "50%", "40%"]}
-          mr={["0", "0", "5%", "10%"]}
-          mt="50px"
-          m={["auto", "auto", "none", "none"]}
+          mr={["0", "0", "10%"]}
+          mt={["20px","20px","50px"]}
+          // m={["auto", "auto", "none", "none"]}
           textAlign={["center", "center", "none", "none"]}
         >
           <Box color="#4F4F52">
@@ -79,7 +79,7 @@ const HomePageData = () => {
           </Box>
         </Box>
         <Box
-          w={["50%", "40%"]}
+          w="40%"
           mt="30px"
           display={["none", "none", "block", "block"]}
         >
@@ -384,7 +384,7 @@ const HomePageData = () => {
           textAlign="center"
           fontSize={["lg", "xl", "2xl"]}
           mt="10px"
-          w={["85%", "85%", "0"]}
+          w={["85%", "85%", "40%"]}
           m={["auto", "auto", "none"]}
         >
           Sync Cronometer with these activity trackers, Apple Health, Google Fit
@@ -422,7 +422,7 @@ const HomePageData = () => {
         >
           <Box
             w={["90%", "90%", "40%"]}
-            mt={["70px", "70px", "120px"]}
+            mt={["70px", "70px", "0px"]}
             m={["auto", "auto", "none"]}
           >
             <Text
