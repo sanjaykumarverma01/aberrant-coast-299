@@ -1,7 +1,7 @@
 import React from 'react'
 import InsideNavbar from '../../InsideNavbar';
 import InsideFooter from '../../InsideFooter';
-// import styles from '../css/trends.module.css'
+import styles from '../css/trends.module.css'
 import InnerNavTrend from '../../InnerNavTrend';
 import { Text, Box, Spacer, Stack, Image, Button, Flex, } from '@chakra-ui/react'
 import { WarningIcon } from '@chakra-ui/icons'
@@ -12,19 +12,21 @@ const Trends = () => {
   return (
     <div>
       <InsideNavbar/>
+ <div className={styles.trends}>
+
       <InnerNavTrend/>
       <div >
-      <Box  pl="200px" pr="200px" pt="50px" pb="100px" >
-      <Box textAlign='left' pb="30px">
+      <Box pt="50px" pb="100px" >
+      <Box textAlign='left' pb="30px" w="95%">
       <Text fontSize='3xl' fontWeight={"600"}>Charts</Text>
       <Stack  direction='row' >
       <Box>
       <Text fontSize='sm'>Customize your charts to review and analyze the information you’re most interested in.</Text>
       </Box>  
       <Spacer/>
-      <Stack direction='row' justify={'center'}>
+      <Stack direction='row' color="grey" justify={'center'}>
        <WarningIcon/>
-       <Text  fontSize='sm' >LEARN MORE</Text>
+       <Text  fontSize='sm' color="grey">LEARN MORE</Text>
                
             </Stack>
       </Stack>
@@ -195,6 +197,8 @@ const Trends = () => {
 
        </Box>    
       </div>
+
+ </div>
       <InsideFooter/>
     </div>
   )

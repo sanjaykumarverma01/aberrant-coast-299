@@ -7,10 +7,8 @@ import {
   PopoverContent,
   PopoverHeader,
   PopoverBody,
-  PopoverFooter,
   PopoverArrow,
   PopoverCloseButton,
-  PopoverAnchor,
   Button,
   Portal,
   Flex,
@@ -31,7 +29,7 @@ const InsideNavbar = () => {
 
   return (
     <div className={styles.navbar}>
-      <div style={{display:"flex" ,border:"1px solid red"}} >
+      <div style={{display:"flex"}} >
         <img className={styles.logo} src="https://cdn1.cronometer.com/logos/cronometer-logo-orange.png" alt="" />
         
           <div style={{paddingTop:"30px"}}>
