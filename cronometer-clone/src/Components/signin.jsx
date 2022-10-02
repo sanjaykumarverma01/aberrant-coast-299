@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import styled from "styled-components";
 import axios from 'axios';
 import { useToast } from '@chakra-ui/react';
+import {useNavigate} from "react-router-dom"
 
 const Inputs = styled.input`
 width:98%;
@@ -19,6 +20,7 @@ const Signin = () => {
     const [isDisableds, setDisables] = useState(false)
     const [form, setform] = useState({});
     const toast = useToast()
+    const navigate= useNavigate()
 
     const allChecked = checkedItems.every(Boolean)
 
@@ -32,32 +34,32 @@ const Signin = () => {
         })
     }
 
-    const handlersubmit = async(e) => {
+    const handlersubmit = async (e) => {
         e.preventDefault();
         console.log(form, "form")
-       const res =  await axios.post("",form)
-       const data = res.data;
-const flag =0;
-       if (data.status === "error" || data.password !== data.confirmpass) {
-        toast({
-          title: "signup failed",
-          description: res.message,
-          status: "error",
-          duration: 5000,
-          isClosable: true,
-        });
-        flag = 0;
-      }
-      if (flag) {
-        toast({
-          title: "signup successful",
-          description: "Your Profile has been creatd on Loseit",
-          status: "success",
-          duration: 5000,
-          isClosable: true,
-        });
-        // navigate("/home");
-      }
+        const res = await axios.post("https://cronologyback.herokuapp.com/auth/signin", form)
+        const data = res.data;
+        const flag = 1;
+        if (data.status === "error" || data.password !== data.confirmpass) {
+            toast({
+                title: "signup failed",
+                description: res.message,
+                status: "error",
+                duration: 5000,
+                isClosable: true,
+            });
+            flag = 0;
+        }
+        if (flag) {
+            toast({
+                title: "signup successful",
+                description: "Your Profile has been creatd on Loseit",
+                status: "success",
+                duration: 5000,
+                isClosable: true,
+            });
+            navigate("/login");
+        }
 
     }
     // console.log(form)
@@ -107,12 +109,12 @@ const flag =0;
                                     <Stack spacing={7} direction='row' my={2}>
                                         <Text>sex:</Text>
                                         <RadioGroup>
-                                        <Radio size='lg' name='sex' colorScheme='red' type={"radio"} onChange={Targetvalue} value="male" mr={4} >
-                                            Male
-                                        </Radio>
-                                        <Radio size='lg' name='sex'  type={"radio"} value="female" colorScheme='red' onChange={Targetvalue} >
-                                            Female
-                                        </Radio>
+                                            <Radio size='lg' name='sex' colorScheme='red' type={"radio"} onChange={Targetvalue} value="male" mr={4} >
+                                                Male
+                                            </Radio>
+                                            <Radio size='lg' name='sex' type={"radio"} value="female" colorScheme='red' onChange={Targetvalue} >
+                                                Female
+                                            </Radio>
                                         </RadioGroup>
 
                                     </Stack>
@@ -218,30 +220,30 @@ const flag =0;
                             </Box>
                         </Box>
 
-                        {!isDisableds ? <Input type={"submit"} w={"95%"}  cursor="pointer"
-              flex={1}
-              fontSize={"lg"}
-    ml={4}
-              bg={"#67AC5B"}
-              color={"white"}
-              _hover={{
-                bg: "#67AC5B;",
-              }}
-              _focus={{
-                bg: "#67AC5B;",
-              }} opacity={"0.5"} mt={"100px"}/> : <Input type={"submit"} w={"95%"}  cursor="pointer"
-              flex={1}
-              mt={"100px"}
-              fontSize={"lg"}
-              ml={4}
-              bg={"#67AC5B"}
-              color={"white"}
-              _hover={{
-                bg: "#67AC5B",
-              }}
-              _focus={{
-                bg: "#67AC5B",
-              }}/> }
+                        {!isDisableds ? <Input type={"submit"} w={"95%"} cursor="pointer"
+                            flex={1}
+                            fontSize={"lg"}
+                            ml={4}
+                            bg={"#67AC5B"}
+                            color={"white"}
+                            _hover={{
+                                bg: "#67AC5B;",
+                            }}
+                            _focus={{
+                                bg: "#67AC5B;",
+                            }} opacity={"0.5"} mt={"100px"} /> : <Input type={"submit"} w={"95%"} cursor="pointer"
+                                flex={1}
+                                mt={"100px"}
+                                fontSize={"lg"}
+                                ml={4}
+                                bg={"#67AC5B"}
+                                color={"white"}
+                                _hover={{
+                                    bg: "#67AC5B",
+                                }}
+                                _focus={{
+                                    bg: "#67AC5B",
+                                }} />}
 
                     </form>
                 </Box>

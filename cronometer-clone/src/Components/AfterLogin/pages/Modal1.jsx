@@ -24,7 +24,7 @@ const Modal1 = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <div>
-       <Button onClick={onOpen}>Add food</Button>
+       <Button variant={"ghost"} _hover={{bgColor:"none"}} color="gray" fontWeight={600} onClick={onOpen}>Add food</Button>
 
 <Modal isOpen={isOpen} onClose={onClose} w="1200px">
   <ModalOverlay />

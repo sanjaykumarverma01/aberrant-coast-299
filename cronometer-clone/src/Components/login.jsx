@@ -2,6 +2,11 @@ import { Box, Button, Image, Img, Text, Input } from "@chakra-ui/react";
 import React, { useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
+import { useToast } from '@chakra-ui/react';
+import {useNavigate} from "react-router-dom"
+// import { loginsucess } from "../Redux/AuthReducer/action";
+import { useDispatch } from "react-redux";
+import { saveData } from "../Utils/accessLocalStorage";
 const Inputs = styled.input`
   width: 98%;
   // outline:none;
@@ -13,6 +18,10 @@ const Inputs = styled.input`
 `;
 const Login = () => {
   const [form, setform] = useState({});
+  const navigate= useNavigate()
+  const dispatch=useDispatch()
+  
+  const toast = useToast()
   const Targetvalue = (e) => {
     const { name, value } = e.target;
     setform({
@@ -21,11 +30,43 @@ const Login = () => {
     });
   };
 
-  const handlersubmit = async (e) => {
+  const handlersubmit = (e) => {
     e.preventDefault();
     console.log(form, "form");
-    //  const res =  await axios.post("",form)
-    //  const data = res.data;
+   fetch("https://cronologyback.herokuapp.com/auth/login",{
+method:"POST",
+headers:{"Content-Type":"application/json"},
+body:JSON.stringify(form)
+
+
+   }).then((response) => response.json()).then((res)=>{
+    
+    if(res.token){
+      console.log(res.token)
+      saveData("token",res.token)
+      toast({
+                title: "login successful",
+                description: "Your Profile has been creatd on Loseit",
+                status: "success",
+                duration: 5000,
+                isClosable: true,
+            });
+            navigate("/dairy");
+    }else{
+      toast({
+        title: "login failed",
+        description: res.message,
+        status: "error",
+        duration: 5000,
+        isClosable: true,
+    });
+    }
+
+    }).catch((err) => {
+      console.log(err);
+ 
+     })
+    
   };
   return (
     <Box w={"100%"} mt="5">
