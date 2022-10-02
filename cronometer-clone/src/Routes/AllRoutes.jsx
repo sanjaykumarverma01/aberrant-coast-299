@@ -11,6 +11,7 @@ import Trends from "../Components/AfterLogin/pages/Trends";
 import Support from "../Components/AfterLogin/pages/Support";
 import Home from "../Pages/Home";
 import About from "../Components/About";
+import { Blog } from "../Components/Blogs/blog";
 const AllRoutes = () => {
   return (
     <div>
@@ -26,6 +27,7 @@ const AllRoutes = () => {
         <Route path='/support' element={<Support/> }/>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </div>
   );
