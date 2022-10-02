@@ -20,6 +20,8 @@ const Dairy = () => {
     setClose(status);
   };
 
+  const day = new Date()
+
   return (
     <>
       <InsideNavbar />
@@ -28,7 +30,7 @@ const Dairy = () => {
           <div className={styles.date}>
             <h4 onClick={() => setOpen((prev) => !prev)}>
               {" "}
-              <BiLeftArrow className={styles.symbol} /> October 2,2022{" "}
+              <BiLeftArrow className={styles.symbol} /> October {new Date().toLocaleString("en-US", { day : '2-digit'})},2022{" "}
               <BiRightArrow className={styles.symbol} />
             </h4>
             {open && (
