@@ -6,6 +6,7 @@ const exerciseRoutes = express.Router();
 
 exerciseRoutes.get("/getExercise/:name", async (req, res) => {
   var regx = RegExp(req.params.name, "i");
+  console.log(regx)
 
   const searchExercise = await ExerciseModel.find({ name: regx });
   res.send(searchExercise);

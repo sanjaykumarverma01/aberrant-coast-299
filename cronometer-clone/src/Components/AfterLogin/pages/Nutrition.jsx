@@ -10,30 +10,30 @@ const Nutrition = () => {
         {
             id:1,
             title:"Energy Energy",
-            cal:119.2,
+            cal:(Math.random()*(10-1+1)*1).toFixed(2),
             per:"kcal",
-            unit:"6%"
+            unit:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:2,
             title:"Alcohol",
-            cal:0.0,
+            cal:(Math.random()*(10-1+1)*1).toFixed(2),
             per:"g",
-            unit:"0%"
+            unit:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:3,
             title:"Coffeine",
-            cal:0.0,
+            cal:(Math.random()*(10-1+1)*1).toFixed(2),
             per:"mg",
-            unit:"1%"
+            unit:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:4,
             title:"Water",
-            cal:177.2,
+            cal:(Math.random()*(10-1+1)*1).toFixed(2),
             per:"g",
-            unit:"5%"
+            unit:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         }
     ],
     vitamins : [
@@ -42,84 +42,84 @@ const Nutrition = () => {
             a:"B1 (Thiamine)",
             cal:0.0,
             c:"mg",
-            d:"1%"
+            d:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:2,
             a:"B2 (Riboflavin)",
-            cal:0.1,
+            cal:(Math.random()*(10-1+1)*1).toFixed(2),
             c:"mg",
-            d:"5%"
+            d:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:3,
             a:"B3 (Niacin)",
-            cal:0.4,
+            cal:(Math.random()*(10-1+1)*1).toFixed(2),
             c:"mg",
-            d:"2%"
+            d:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:4,
             a:"B5 (Pantothenic Acid)",
-            cal:0.2,
+            cal:(Math.random()*(10-1+1)*1).toFixed(2),
             c:"mg",
-            d:"4%"
+            d:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:5,
             a:"B6 (Pyridoxine)",
-            cal:0.2,
+            cal:(Math.random()*(10-1+1)*1).toFixed(2),
             c:"mg",
-            d:"14%"
+            d:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:6,
             a:"B12 (Cabalamin)",
-            cal:0.0,
+            cal:(Math.random()*(10-1+1)*1).toFixed(2),
             c:"ug",
-            d:"0%"
+            d:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:7,
             a:"Folate",
-            cal:11.1,
+            cal:(Math.random()*(10-1+1)*1).toFixed(2),
             c:"ug",
-            d:"3%"
+            d:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:8,
             a:"Vitamin A",
-            cal:5.8,
+            cal:(Math.random()*(10-1+1)*1).toFixed(2),
             c:"ug",
-            d:"1%"
+            d:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:9,
             a:"Vitamin C",
-            cal:10.8,
+            cal:(Math.random()*(10-1+1)*1).toFixed(2),
             c:"mg",
-            d:"12%"
+            d:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:10,
             a:"Vitamin D",
-            cal:0.0,
+            cal:(Math.random()*(10-1+1)*1).toFixed(2),
             c:"IU",
-            d:"0%"
+            d:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:11,
             a:"Vitamin E",
-            cal:0.4,
+            cal:(Math.random()*(10-1+1)*1).toFixed(2),
             c:"mg",
-            d:"3%"
+            d:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:12,
             a:"Vitamin K",
-            cal:4.1,
+            cal:(Math.random()*(10-1+1)*1).toFixed(2),
             c:"ug",
-            d:"3%"
+            d:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         }
 
     ],
@@ -127,150 +127,150 @@ const Nutrition = () => {
         {
             id:1,
             T:"Carbs",
-            C:36.6,
+            C:(Math.random()*(10-1+1)*1).toFixed(2),
             P:"g",
-            U:"13%"
+            U:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:2,
             T:"Fiber",
-            C:5.1,
+            C:(Math.random()*(10-1+1)*1).toFixed(2),
             P:"g",
-            U:"13%"
+            U:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:3,
             T:"Starch",
-            C:1.6,
+            C:(Math.random()*(10-1+1)*1).toFixed(2),
             P:"g",
-            U:"0%"
+            U:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:4,
             T:"Sugars",
-            C:22.4,
+            C:(Math.random()*(10-1+1)*1).toFixed(2),
             P:"mg",
-            U:"1%"
+            U:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         },
         {
             id:5,
             T:"Net Carbs",
-            C:25.0,
+            C:(Math.random()*(10-1+1)*1).toFixed(2),
             P:"g",
-            U:"12%"
+            U:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
         }
     ],
     lipids:[
     { 
         id:1,
         lipT:"Fat",
-        lipC:0.5,
+        lipC:(Math.random()*(10-1+1)*1).toFixed(2),
         lipU:"g",
-        lipP:"1%"
+        lipP:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
     },
     { 
         id:2,
         lipT:"Monounsaturated",
-        lipC:0.0,
+        lipC:(Math.random()*(10-1+1)*1).toFixed(2),
         lipU:"g",
-        lipP:"0%"
+        lipP:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
     },
     { 
         id:3,
         lipT:"Polyunsaturated",
-        lipC:0.1,
+        lipC:(Math.random()*(10-1+1)*1).toFixed(2),
         lipU:"g",
-        lipP:"0%"
+        lipP:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
     },
     { 
         id:4,
         lipT:"Omega-3",
-        lipC:0.0,
+        lipC:(Math.random()*(10-0.1+1)*0.1).toFixed(2),
         lipU:"g",
-        lipP:"2%"
+        lipP:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
     },
     { 
         id:6,
         lipT:"Omega-6",
-        lipC:0.1,
+        lipC:(Math.random()*(10-1+0.1)*0.1).toFixed(2),
         lipU:"g",
-        lipP:"1%"
+        lipP:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
     },
     { 
         id:7,
         lipT:"Saturated",
-        lipC:0.1,
+        lipC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
         lipU:"g",
-        lipP:"0%"
+        lipP:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
     },
     { 
         id:8,
         lipT:"Trans-Fats",
-        lipC:0.0,
+        lipC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
         lipU:"g",
-        lipP:"0%"
+        lipP:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
     },
     { 
         id:1,
         lipT:"Cholestrol",
-        lipC:0.0,
+        lipC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
         lipU:"mg",
-        lipP:"0%"
+        lipP:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
     },
 
     ],
     Minerals:[
      {  id:1,
         MinT:"calcium",
-        MinC:12.5,
+        MinC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
         MinU:"mg",
-        MinP:"1%"
+        MinP:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
     },
     {  id:2,
         MinT:"Copper",
-        MinC:0.1,
+        MinC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
         MinU:"mg",
-        MinP:"8%"
+        MinP:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
     },
     {  id:3,
         MinT:"Iron",
-        MinC:0.3,
+        MinC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
         MinU:"mg",
-        MinP:"4%"
+        MinP:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
     },
     {  id:4,
         MinT:"Magnessium",
-        MinC:16.8,
+        MinC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
         MinU:"mg",
-        MinP:"4%"
+        MinP:(Math.random()*(5-1+1)*1).toFixed(2)+"%"
     },
     {  id:5,
         MinT:"Manganese",
-        MinC:0.1,
+        MinC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
         MinU:"mg",
         MinP:"6%"
     },
     {  id:6,
         MinT:"Phosphorus",
-        MinC:26.5,
+        MinC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
         MinU:"mg",
         MinP:"4%"
     },
     {  id:7,
         MinT:"Potassium",
-        MinC:296.2,
+        MinC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
         MinU:"mg",
         MinP:"9%"
     },
     {  id:8,
         MinT:"selenium",
-        MinC:0.3,
+        MinC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
         MinU:"mg",
         MinP:"1%"
     },
     {  id:9,
         MinT:"Zinc",
-        MinC:0.1,
+        MinC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
         MinU:"mg",
         MinP:"1%"
     },
@@ -280,77 +280,77 @@ const Nutrition = () => {
         {
             id:1,
             ProT:"Protein",
-            ProC:0.8,
+            ProC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
             ProU:"g",
             ProP:"1%"
         },
         {
             id:2,
             ProT:"Crstine",
-            ProC:0.0,
+            ProC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
             ProU:"g",
             ProP:"1%"
         },
         {
             id:3,
             ProT:"Histodine",
-            ProC:0.0,
+            ProC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
             ProU:"g",
             ProP:"3%"
         },
         {
             id:4,
             ProT:"Isoleucine",
-            ProC:0.0,
+            ProC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
             ProU:"g",
             ProP:"1%"
         },
         {
             id:5,
             ProT:"Leucine",
-            ProC:0.0,
+            ProC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
             ProU:"g",
             ProP:"1%"
         },
         {
             id:6,
             ProT:"Lysine",
-            ProC:0.0,
+            ProC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
             ProU:"g",
             ProP:"1%"
         },
         {
             id:7,
             ProT:"Methionic",
-            ProC:0.0,
+            ProC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
             ProU:"g",
             ProP:"1%"
         },
         {
             id:8,
             ProT:"Phenylalanine",
-            ProC:0.0,
+            ProC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
             ProU:"g",
             ProP:"2%"
         },
         {
             id:9,
             ProT:"Theonine",
-            ProC:0.0,
+            ProC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
             ProU:"g",
             ProP:"1%"
         },
         {
             id:10,
             ProT:"Trytophan",
-            ProC:0.0,
+            ProC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
             ProU:"g",
             ProP:"1%"
         },
         {
             id:11,
             ProT:"Valine",
-            ProC:0.0,
+            ProC:(Math.random()*(10-0.01+0.01)*1).toFixed(2),
             ProU:"g",
             ProP:"2%"
         }

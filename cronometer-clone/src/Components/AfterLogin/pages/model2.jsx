@@ -21,21 +21,21 @@ import {
   import test from "../images/test.png"
 import { useSearchParams } from 'react-router-dom'
 
-const Modal1 = ({hadleclick}) => {
+const Modal2 = ({handleclick2}) => {
   const [inp ,setinp]=useState()
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [searcParams, setSearchParams] = useSearchParams();
     const [name, setName] = useState(searcParams.get("name"));
     const [exerciseData, setExerciseData] = useState([]);
     const token=JSON.parse(localStorage.getItem("token"))
-    const handleSearchFood =  () => {
+    const handleSearchexercise =  () => {
 
      
       // console.log(inp)
       if (inp?.length > 0) {
         
   
-         fetch(`https://cronologyback.herokuapp.com/food/getFood/${inp}`, {
+         fetch(`https://cronologyback.herokuapp.com/crono/getExercise/${inp}`, {
           method: "GET",
           headers:{"Content-type":"application/json",
           authorization:`breaer ${token}`
@@ -51,11 +51,11 @@ const Modal1 = ({hadleclick}) => {
     };
   console.log(exerciseData)
     useEffect(() => {
-      handleSearchFood();
+      handleSearchexercise();
     }, [inp]);
   return (
     <div>
-       <Button variant={"ghost"} _hover={{bgColor:"none"}} color="gray" fontWeight={600} onClick={onOpen}>Add food</Button>
+       <Button variant={"ghost"} _hover={{bgColor:"none"}} color="gray" fontWeight={600} onClick={onOpen}>Add Exercise</Button>
 
 <Modal isOpen={isOpen} onClose={onClose} w="1200px">
   <ModalOverlay />
@@ -82,7 +82,7 @@ const Modal1 = ({hadleclick}) => {
 
               />
               <Spacer/>
-              <Button size="sm" border={'1px solid orange'} bg="white"color="orange" onClick={handleSearchFood}>Search</Button>
+              <Button size="sm" border={'1px solid orange'} bg="white"color="orange" onClick={handleSearchexercise}>Search</Button>
             </Flex>
             <Box mt="10px" >
               <Flex gap="5px" bg="#f7f7f7" borderBottom={'1px solid black'} h="30px" mt="10px" >
@@ -109,7 +109,7 @@ const Modal1 = ({hadleclick}) => {
                   <Box>
                     {/* Append data here */}
                     {exerciseData?.map((elem,index)=>{
-                   return   <Flex key={index} _hover={{bgColor:"gray.300" }} onClick={()=>hadleclick(elem,elem._id)}>
+                   return   <Flex key={index} _hover={{bgColor:"gray.300" }} onClick={()=>handleclick2(elem,elem._id)}>
   <Text fontSize={'sm'}> {elem.name}</Text>
   <Spacer/>
   <Flex>
@@ -170,4 +170,4 @@ const Modal1 = ({hadleclick}) => {
   )
 }
 
-export default Modal1
+export default Modal2

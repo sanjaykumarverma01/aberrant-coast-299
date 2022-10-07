@@ -12,9 +12,9 @@ const Vitamins = () => {
         {
             id:1,
             a:"B1 (Thiamine)",
-            b:0.0,
+            b:(Math.random()*(10-1+1)*1).toFixed(2),
             c:"mg",
-            d:"1%"
+            d:"5%"
         },
         {
             id:2,
