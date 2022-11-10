@@ -11,7 +11,11 @@ const ReqAuth = ({children}) => {
     // const token = loadData("token")
     // console.log()
 
+<<<<<<< HEAD
     console.log(token)
+=======
+    // console.log(token)
+>>>>>>> 885ad9b9311e50fe1ed49b8ad4a64ec031097f66
 
     if(token){
         return children
