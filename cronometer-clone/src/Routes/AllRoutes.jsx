@@ -24,15 +24,15 @@ const AllRoutes = () => {
           <Route path="/dairy" element={<ReqAuth><Dairy/></ReqAuth>}/>
         
         
-        <Route path="/trends" element={<Trends/>}/>
-        <Route path="/foods" element={<Foods/>}/>
-        <Route path="/setting" element={<Settings/>}/>
-        <Route path="/plans" element={<Plans/>}/>
-        <Route path="/Helps" element={<Helps/>}/>
-        <Route path='/support' element={<Support/> }/>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/trends" element={<ReqAuth><Trends/></ReqAuth>}/>
+        <Route path="/foods" element={<ReqAuth><Foods/></ReqAuth>}/>
+        <Route path="/setting" element={<ReqAuth><Settings/></ReqAuth>}/>
+        <Route path="/plans" element={<ReqAuth><Plans/></ReqAuth>}/>
+        <Route path="/Helps" element={<ReqAuth><Helps/></ReqAuth>}/>
+        <Route path='/support' element={<ReqAuth><Support/></ReqAuth> }/>
+        <Route path="/" element={<ReqAuth><Home /></ReqAuth>} />
+        <Route path="/about" element={<ReqAuth><About /></ReqAuth>} />
+        <Route path="/blog" element={<ReqAuth><Blog /></ReqAuth>} />
       </Routes>
     </div>
   );

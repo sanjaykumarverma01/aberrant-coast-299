@@ -103,7 +103,8 @@ overflow-x: hidden;
   display: flex;
   font-size: 14px;
   width: 800px;
-  /* border: 5px solid rgb(165, 33, 16); */
+
+  box-sizing: border-box;
  
 }
 .tableshow>p{
