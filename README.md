@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Cronomter Clone
 
  <h2>Welcome to this repo</h2>
@@ -71,3 +72,6 @@ we really enjoyed this whole part of developing and had a learing experience and
 
 ---
 
+=======
+# cronology
+>>>>>>> d5952bdab66093180a74598f283e36161c78afac

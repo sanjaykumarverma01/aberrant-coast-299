@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1",
+=======
+
+>>>>>>> d5952bdab66093180a74598f283e36161c78afac
     "start": "nodemon index.js"
   },
   "author": "",

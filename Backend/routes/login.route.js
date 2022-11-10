@@ -3,9 +3,9 @@ const User = require("../model/auth.model")
 const bcryptjs = require("bcryptjs");
 Loginrouter =Router();
 const jwt = require("jsonwebtoken");
-const authentication = require("../middleware/Authentications");
+// const authentication = require("../middleware/Authentications");
 require("dotenv").config();
-
+const bycryptjs = require("bcryptjs")
 Loginrouter.post("/login",async(req,res)=>{
     const { email,password} =req.body
     const user = await User.find({email})
@@ -35,64 +35,81 @@ Loginrouter.post("/login",async(req,res)=>{
 
     
 })
-Loginrouter.patch("/updatelogin",authentication,async(req,res)=>{
-    const { email,password,oldemail} =req.body
-    console.log(req.body)
-    // try{
-      
-    //     console.log(req.body)
-    //     bcryptjs.genSalt(10, (err, salt) => {
-    //         if (err) {
-    //             return res.status(500).send({
-    //                status: "error",
-    //                 message: "Invalid Credendtials"
-    //             })
-    //         }
-    
-    //         bcryptjs.hash(password, salt, async function (err, hash) {
-    //             if (err) {
-    //                 return res.status(500).json({
-    //                     status: "error", message: "invalid credentials"
-    //                 })
-    //             } else {
-    
-    //                 try{
-    
-    
-    //                     await new User({
-    //                         ...req.body,
-    //                         email:email,
-    //                         password: hash
-    //                     }).save();
-    //                     return res.status(201).json({
-    //                         status: "success changes",
-    //                         message: "changes successfull"
-    //                     })
-    
-    
-    //                 }
-    
-    //                 catch(error){
-    
-    
-    //                     return res.status(500).send({
-    //                         status: "error", message: "bad request"
-    //                     })
-    //                 }
-    
-    
-    
-    //             }
-    //         })
-    //     })
-    // }catch(error){
-    //     res.send(error);
-    // }
-     
+Loginrouter.post("/updateemail",async(req,res)=>{
+    const { email,password,updateemail} =req.body
 
-    
+
+    User.findOne({email}, (err, user) => {
+  
+        if (err) {
+            res.send(err);
+        } else {
+          
+         user.email=req.body.updateemail
+      
+         user.save()
+         res.send("user")
+        }
+   
+})
 })
 
+Loginrouter.post("/updatepassword",async(req,res)=>{
+    const { email,password,updateemail,updatepassword} =req.body
+
+
+    try{
+
+        bycryptjs.genSalt(10, (err, salt) => {
+            if (err) {
+                return res.status(500).send({
+                   status: "error",
+                    message: "Invalid Credendtials"
+                })
+            }
+    
+            bycryptjs.hash(updatepassword, salt, async function (err, hash) {
+                if (err) {
+                    return res.status(500).json({
+                        status: "error", message: "invalid credentials"
+                    })
+                } else {
+    
+                    try{
+        User.findOne({email}, (err, user) => {
+        console.log(user)
+        if (err) {
+            res.send(err);
+        } else {
+         user.password=hash
+         user.save()
+         res.send(user)
+        }
+   
+})
+    
+    
+                    }
+    
+                    catch(error){
+    
+    
+                        return res.status(500).send({
+                            status: "error", message: "bad request"
+                        })
+                    }
+    
+    
+    
+                }
+            })
+        })
+    }catch(error){
+        res.send(error);
+    }
+             
+
+})
 
 
 

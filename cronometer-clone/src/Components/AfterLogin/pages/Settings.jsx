@@ -3,6 +3,8 @@ import InsideNavbar from "../../InsideNavbar";
 import InsideFooter from "../../InsideFooter";
 import styles from "../css/setting.module.css";
 import { useNavigate } from "react-router-dom";
+import styled from "styled-components";
+import { useState } from "react";
 import {
   Tabs,
   TabList,
@@ -16,17 +18,124 @@ import {
   VStack,
   Switch,
   Input,
+  useToast,
 } from "@chakra-ui/react";
 import { BsFillCloudArrowDownFill } from "react-icons/bs";
 import { RiDeleteBin2Fill } from "react-icons/ri";
+import { saveData } from "../../../Utils/accessLocalStorage";
+const Inputs = styled.input`
+width:98%;
+// outline:none;
+margin:5px;
+padding:10px;
+border :1px solid black;
+padding-right:-15px;
+
+`
+
 const Settings = () => {
+    
+  const toast = useToast()
   const navigate = useNavigate();
+  const [form, setform] = useState({});
+  const Targetvalue = (e) => {
+    const { name, value } = e.target;
+    setform({
+        ...form,
+        [name]: value
+    })
+}
   const handleLogout = () => {
     navigate("/");
   };
   const handleDeleteAccount = () => {
     navigate("/");
   };
+  const token = JSON.parse(localStorage.getItem("token"))
+  console.log(token)
+  const handlersubmit = () => {
+   
+  console.log(form,"form")
+    localStorage.setItem("login",form.updateemail)
+   fetch("http://localhost:8000/auth/updateemail",{
+method:"POST",
+headers: {
+  "Content-type": "application/json",
+  authorization: `breaer ${token}`
+},
+body:JSON.stringify(form)
+
+
+   }).then((res)=>{
+    console.log(res)
+    if(res){
+
+   
+      toast({
+                title: " successful change email",
+             
+                status: "success",
+                duration: 5000,
+                isClosable: true,
+            });
+    }else{
+      toast({
+        title: " failed",
+        description: res.message,
+        status: "error",
+        duration: 5000,
+        isClosable: true,
+    });
+    }
+
+    }).catch((err) => {
+      console.log(err);
+ 
+     })
+   
+    
+  };
+  const handlersubmit2 = () => {
+   
+    console.log(form,"form")
+      localStorage.setItem("login",form.email)
+     fetch("http://localhost:8000/auth/updatepassword",{
+  method:"POST",
+  headers: {
+    "Content-type": "application/json",
+    authorization: `breaer ${token}`
+  },
+  body:JSON.stringify(form)
+  
+  
+     }).then((res)=>{
+      console.log(res)
+      if(res){
+  
+     
+        toast({
+                  title: " successful change password",
+               
+                  status: "success",
+                  duration: 5000,
+                  isClosable: true,
+              });
+      }else{
+        toast({
+          title: " failed",
+          description: res.message,
+          status: "error",
+          duration: 5000,
+          isClosable: true,
+      });
+      }
+  
+      }).catch((err) => {
+        console.log(err);
+   
+       })
+      
+    };
   return (
     <div>
       <InsideNavbar />
@@ -59,32 +168,39 @@ const Settings = () => {
                   </Box>
                   <VStack spacing={"4"} margin="30px" className={styles.text}>
                     <Flex gap={"10"}>
-                      <Text w="100px">Email</Text>
-                      <Box
-                        px="2"
+                    {/* <Inputs w="100px" type='email' onChange={Targetvalue} placeholder='Email Address' name='email' />
+                                <Inputs type='password' placeholder='password ' name='password' onChange={Targetvalue} />
+                                <Inputs type='password' placeholder=' Confirm password ' name='confirmpassword' onChange={Targetvalue} /> */}
+                      <Text >Email</Text>
+                      {/* <Box
+                     
+                      >
+                        Your Email
+                      </Box> */}
+                      <Inputs    px="2"
                         py="2"
                         bgColor={"#fbfbfa"}
                         border="1px solid #e0e0dc"
-                        w="400px"
-                      >
-                        Your Email
-                      </Box>
-                      <Button colorScheme={"orange"} variant="ghost">
+                        w="400px"  type='email' onChange={Targetvalue} placeholder='Email Address' name='updateemail' />
+                      <Button colorScheme={"orange"} variant="ghost" onClick={()=>{
+                        console.log("log")
+                  handlersubmit()
+                      }}>
                         Update
                       </Button>
                     </Flex>
                     <Flex gap={"10"}>
                       <Text w="100px">password</Text>
-                      <Box
-                        px="2"
+                      <Inputs type='password'   px="2"
                         py="2"
                         bgColor={"#fbfbfa"}
                         border="1px solid #e0e0dc"
-                        w="400px"
-                      >
-                        *******
-                      </Box>
-                      <Button colorScheme={"orange"} variant="ghost">
+                        w="400px" placeholder='password ' name='updatepassword' onChange={Targetvalue} />
+                    
+                      <Button colorScheme={"orange"} variant="ghost" onClick={()=>{
+                        console.log("log")
+                  handlersubmit2()
+                      }}>
                         Update
                       </Button>
                     </Flex>

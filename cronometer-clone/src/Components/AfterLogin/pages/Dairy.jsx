@@ -215,7 +215,7 @@ return (
                 <span>
                   <BsApple className={styles.logof} />
                 </span>
-                <text style={{ display: "flex" }}>
+                <text style={{ display: "flex",overflow:"hidden",flexDirection:"row",width:"50px"}}>
                   {elm.name}
                 </text>
 

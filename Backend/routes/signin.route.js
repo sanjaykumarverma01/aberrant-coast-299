@@ -1,6 +1,7 @@
 const {Router} = require("express");
 const bycryptjs = require("bcryptjs")
 
+const jwt = require("jsonwebtoken");
 const Signinrouter = Router()
 const User = require("../model/auth.model")
 
@@ -8,7 +9,7 @@ Signinrouter.post("/signin", (req, res,next) => {
     
     try{
         const { email, password } = req.body;
-        console.log(req.body)
+
         bycryptjs.genSalt(10, (err, salt) => {
             if (err) {
                 return res.status(500).send({
@@ -19,7 +20,7 @@ Signinrouter.post("/signin", (req, res,next) => {
     
             bycryptjs.hash(password, salt, async function (err, hash) {
                 if (err) {
-                    return res.status(500).json({
+                    return res.status(500).send({
                         status: "error", message: "invalid credentials"
                     })
                 } else {
@@ -31,7 +32,7 @@ Signinrouter.post("/signin", (req, res,next) => {
                             ...req.body,
                             password: hash
                         }).save();
-                        return res.status(201).json({
+                        return res.status(201).send({
                             status: "success",
                             message: "signup successfull"
                         })

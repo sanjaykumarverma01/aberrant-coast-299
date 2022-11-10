@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import styles from './Innavbar.module.css';
 import {
   Popover,
@@ -21,7 +21,7 @@ import {IoMdArrowDropdown, IoMdArrowDropup} from 'react-icons/io'
 const InsideNavbar = () => {
   const [open, setopen] = useState(false)
 
-
+var email = localStorage.getItem("login")
   const handleArrow = () => {
     let status = !open;
     setopen(status);
@@ -41,12 +41,18 @@ const InsideNavbar = () => {
               <PopoverContent w="550px" h='300px' boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px" ml='100px'>
                 <PopoverArrow />
                 <Flex>
-                <PopoverHeader display="flex">Signed in as: swapnilramteke004@gmail.com</PopoverHeader>
+                <PopoverHeader display="flex">Signed in as:{email}</PopoverHeader>
                 <PopoverCloseButton />
                 <PopoverBody>
-                <Button colorScheme='orange' variant='outline' ml='30px'>
+            <Button colorScheme='orange' variant='outline' ml='30px' onClick={()=>{
+                  localStorage.clear()
+
+         
+                }}>
+                      <Link to="/login"></Link>
                     Logout
                   </Button>
+  
                 </PopoverBody>
                 </Flex>
                 <Grid templateColumns='repeat(2, 1fr)' gap={6} mt='20px'>

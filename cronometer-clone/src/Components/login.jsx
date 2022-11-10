@@ -1,11 +1,12 @@
 import { Box, Button, Image, Img, Text, Input } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
 import { useToast } from '@chakra-ui/react';
 import {useNavigate} from "react-router-dom"
 // import { loginsucess } from "../Redux/AuthReducer/action";
 import { useDispatch } from "react-redux";
+import {Navigate} from "react-router-dom";
 import { saveData } from "../Utils/accessLocalStorage";
 const Inputs = styled.input`
   width: 98%;
@@ -32,7 +33,8 @@ const Login = () => {
 
   const handlersubmit = (e) => {
     e.preventDefault();
-    console.log(form, "form");
+  
+    localStorage.setItem("login",form.email)
    fetch("https://cronologyback.herokuapp.com/auth/login",{
 method:"POST",
 headers:{"Content-Type":"application/json"},
@@ -42,7 +44,7 @@ body:JSON.stringify(form)
    }).then((response) => response.json()).then((res)=>{
     
     if(res.token){
-      console.log(res.token)
+
       saveData("token",res.token)
       toast({
                 title: "login successful",
@@ -68,6 +70,13 @@ body:JSON.stringify(form)
      })
     
   };
+  const token=JSON.parse(localStorage.getItem("token"))
+  useEffect(()=>{
+    if(token===null){
+      <Navigate to="/login"/>
+    }
+  },[token])
+
   return (
     <Box w={"100%"} mt="5">
       <Box

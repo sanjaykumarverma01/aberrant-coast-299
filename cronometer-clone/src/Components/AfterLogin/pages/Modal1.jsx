@@ -49,7 +49,7 @@ const Modal1 = ({hadleclick}) => {
           });
       }
     };
-  console.log(exerciseData)
+
     useEffect(() => {
       handleSearchFood();
     }, [inp]);
@@ -110,7 +110,7 @@ const Modal1 = ({hadleclick}) => {
                     {/* Append data here */}
                     {exerciseData?.map((elem,index)=>{
                    return   <Flex key={index} _hover={{bgColor:"gray.300" }} onClick={()=>hadleclick(elem,elem._id)}>
-  <Text fontSize={'sm'}> {elem.name}</Text>
+  <Text  fontSize={'sm'}> {elem.name}</Text>
   <Spacer/>
   <Flex>
   <Image h="10px" mt="5px" pr="10px" src={test}></Image>
